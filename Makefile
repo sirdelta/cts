@@ -11,8 +11,7 @@
 
 VERSION := v9-4
 TARGET = cts_$(VERSION)	
-RM = rm -f
-RMDIR = rm -rf
+RM = rm -rf
 # THREAD: the recommended compile's option for thread safety in GCC.
 #	The "-pthread" define option is equivalent to "-lpthread -D_REENTRANT"
 #	The flags do the following:
@@ -71,7 +70,7 @@ install: $(BIN)
 
 clean:
 	$(RM) $(OBJ) $(DEP) $(BIN)
-	$(RMDIR) $(OBJDIR) $(ETCDIR) 2> /dev/null; true
+	$(RM) $(OBJDIR) $(ETCDIR) 2> /dev/null; true
 
 uninstall: $(BIN)
-	$(RM) $(BIN) $(HOME)
+	$(RM) $(BIN) $(HOME)/$(TARGET)

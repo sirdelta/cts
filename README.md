@@ -39,7 +39,7 @@ The arrivals of cars on the lanes happen randomly from a maximum time-lapse valu
 
 To activate the mode and change this time-lapse, use the option `-a` in command line.
 
-For more details about parameters and settings to set before start a simulation, see the help menu option in command line (option `–h`).
+For more details about parameters and settings to set before start a simulation, see the help menu option in command line (`–h` option).
 
 ### Command line options
 
@@ -75,4 +75,4 @@ Display the simulation's manual.
 ```
 Show the current version of the program.
 
-For more details about default input value, see the help menu option in command line (option `–h`).
+For more details about default input value, see the help menu option in command line (`–h` option).

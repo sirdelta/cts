@@ -30,8 +30,10 @@ The program runs into two modes of simulation, in interactive or in automatic. T
 ### Interactive Mode (by default)
 
 The arrivals of cars on the lanes are manually chose by striking a specific keyboard:
+
 * `Key 1` for the main lane
 * `Key 2` for the second lane
+
 To switch from one lane to another, strike a key and then press `enter`.
 
 ### Automatic Mode

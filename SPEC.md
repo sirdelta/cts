@@ -1,6 +1,6 @@
 # Specifications
 
-This document is a quick overview of the CTS project, covering the general structure of the project, the program flow and the project boundaries.
+This document is a quick overview of the CTS project, covering the general structure of the project, the program execution and the project boundaries.
 
 ## Implementations
 
@@ -12,9 +12,12 @@ The objective of this project is to carry out a simulation of a crassroad's junc
 
 Other files are added to these items. The __config.c file and its header__ are used to manage the information provided before launching the program. The __param.h file__ declares the global variables, constants and libraries used throughout the simulation. It also contains all the variables shared by all the processes.
 
+For more details, consult documentation of these files.
+
 ## Running
 
 Before starting the program, the user can provide the following information:
+
 * The time to wait for the green light on a lane (`–t` option).
 * The maximum time to wait for a new car to appear (`–a` option).
 * The number of cars that must pass the intersection before the end of the program (`–n` option).
@@ -26,11 +29,13 @@ In interactive mode, the user has the possibility to choose the lane on which th
 In automatic mode, __the cars randomly choose the lane__ on which he wishes to arrive. In this case, the user is only a spectator of the comings and goings of the motorists. This mode is activated by selecting the `-a` option before the program is launched.
 
 The simulation ends with a situation-specific return value:
+
 * __Value 1__: The generation of an IPC key for semaphores and shared variables failed.
 * __Value 2__: the allocation of a IPC variable (semaphore or shared) did not work.
 * __Value 3__: Creating a process after calling the fork function did not work.
 * __Value 4__: allocating a mutex at thread level did not work.
 * __Value 5__: the condition attached to the mutex at thread level was not fulfilled.
+
 If necessary, the user can interrupt the program at any time with `ctrl + c`.
 
 ## Limits

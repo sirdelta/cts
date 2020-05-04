@@ -1,7 +1,5 @@
 #!/bin/make
 #
-#	Generate, update and install CTS program.
-#
 #	---> Quick Guide <---
 #	$@ : name of the target
 #	$< : name of first dependency

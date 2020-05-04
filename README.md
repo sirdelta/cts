@@ -32,10 +32,11 @@ The program runs into two modes of simulation, in interactive or in automatic. T
 The arrivals of cars on the lanes are manually chose by striking a specific keyboard:
 * `Key 1` for the main lane
 * `Key 2` for the second lane
+To switch from one lane to another, strike a key and then press `enter`.
 
 ### Automatic Mode
 
-The arrivals of cars on the lanes happen randomly from a maximum time-lapse value in milliseconds. By default, this value is limited to 1 s.
+The arrivals of cars on the lanes happen randomly from a maximum time-lapse value in milliseconds. By default, this value is limited to 1 sec.
 
 To activate the mode and change this time-lapse, use the option `-a` in command line.
 

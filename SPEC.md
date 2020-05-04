@@ -28,13 +28,14 @@ In interactive mode, the user has the possibility to choose the lane on which th
 
 In automatic mode, __the cars randomly choose the lane__ on which he wishes to arrive. In this case, the user is only a spectator of the comings and goings of the motorists. This mode is activated by selecting the `-a` option before the program is launched.
 
-The simulation ends with a situation-specific return value:
+The simulation ends with a situation-specific return value.
 
-* __Value 1__: The generation of an IPC key for semaphores and shared variables failed.
-* __Value 2__: the allocation of a IPC variable (semaphore or shared) did not work.
-* __Value 3__: Creating a process after calling the fork function did not work.
-* __Value 4__: allocating a mutex at thread level did not work.
-* __Value 5__: the condition attached to the mutex at thread level was not fulfilled.
+__Return Value__ | __Condition__
+__1__ | The generation of an IPC key for semaphores and shared variables failed.
+__2__ | the allocation of a IPC variable (semaphore or shared) did not work.
+__3__ | Creating a process after calling the fork function did not work.
+__4__ | allocating a mutex at thread level did not work.
+__5__ | the condition attached to the mutex at thread level was not fulfilled.
 
 If necessary, the user can interrupt the program at any time with `ctrl + c`.
 

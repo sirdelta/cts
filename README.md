@@ -30,33 +30,33 @@ The program runs into two modes of simulation, in interactive or in automatic. T
 ### Interactive Mode (by default)
 
 The arrivals of cars on the lanes are manually chose by striking a specific keyboard:
-* `<Key 1>` for the main lane
-* `<Key 2>` for the second lane
+* `Key 1` for the main lane
+* `Key 2` for the second lane
 
 ### Automatic Mode
 
 The arrivals of cars on the lanes happen randomly from a maximum time-lapse value in milliseconds. By default, this value is limited to 1 s.
 
-To activate the mode and change this time-lapse, use the option `<-a>` in command line.
+To activate the mode and change this time-lapse, use the option `-a` in command line.
 
-For more details about parameters and settings to set before start a simulation, see the help menu option in command line (option `<–h>`).
+For more details about parameters and settings to set before start a simulation, see the help menu option in command line (option `–h`).
 
 ### Command line options
 
 The list of options is as follows:
 
 ```bash
--a [_NUMBER_]
+-a [ NUMBER ]
 ```
 Start the program in automatic mode. To change the time-lapse of the arrival of the cars, specify the new value in milliseconds.
 
 ```bash
--n [_NUMBER_]
+-n [ NUMBER ]
 ```
 Sets the maximum number of cars which can wait at a traffic light. By default, this value is limited to 50 cars. This option is required to start the simulation.
 
 ```bash
--t [_NUMBER_]
+-t [ NUMBER ]
 ```
 Specify the minimum waiting time before going to the green light. By default, this value is limited to 10 seconds. The duration must be set in milliseconds.
 
@@ -75,4 +75,4 @@ Display the simulation's manual.
 ```
 Show the current version of the program.
 
-For more details about default input value, see the help menu option in command line (option `<–h>`).
+For more details about default input value, see the help menu option in command line (option `–h`).

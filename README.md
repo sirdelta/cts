@@ -1,9 +1,9 @@
 # Crossroad Traffic Simulation
 
-CTSv9.4 is a small program simulating the circulation at a crossroad junction. The comings and goings of the cars are displayed and timed.
+CTS is a small program simulating the circulation at a crossroad junction. The comings and goings of the cars are displayed and timed.
 The user has the possibility to interact during the simulation by choosing the lane on which the cars should arrive.
 
-This program is an excellent way to learn how processes under UNIX work as well as the management of shared resources between processes.
+This program is an excellent way to learn how processes under UNIX work, as well as the management of shared resources between processes.
 
 ## Build & Install
 

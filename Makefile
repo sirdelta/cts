@@ -68,13 +68,12 @@ $(OBJDIR)/%.o: $(SRCDIR)/%.c
 	gcc $(CFLAGS) -c -MMD -MP -o $@ $<
 
 install: $(BIN)
-	# Program install on current folder.
-	install -d
-	install -m 755 $(BIN)
+	install -d $(HOME)
+	install -m 755 $(BIN) $(HOME)
 
 clean:
 	$(RM) $(OBJ) $(DEP) $(BIN)
 	$(RMDIR) $(OBJDIR) $(ETCDIR) 2> /dev/null; true
 
 uninstall: $(BIN)
-	$(RM) $(BIN)
+	$(RM) $(BIN) $(HOME)

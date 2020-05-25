@@ -30,7 +30,7 @@ In automatic mode, __the cars randomly choose the lane__ on which he wishes to a
 
 The simulation ends with a situation-specific return value.
 
-__Return Value__    | __Condition__
+__Return value__    | __Condition__
 :----------------:  | :-------------
 __1__   | The generation of an IPC key for semaphores and shared variables failed.
 __2__   | The allocation of a IPC variable (semaphore or shared) did not work.

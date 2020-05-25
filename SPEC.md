@@ -34,8 +34,8 @@ __Return Value__    | __Condition__
 :----------------:  | :-------------
 __1__   | The generation of an IPC key for semaphores and shared variables failed.
 __2__   | The allocation of a IPC variable (semaphore or shared) did not work.
-__3__   | Creating a process after calling the fork function did not work.
-__4__   | Allocating a mutex at thread level did not work.
+__3__   | The creation of a process after calling the fork function did not work.
+__4__   | The allocation of a mutex at thread level did not work.
 __5__   | The condition attached to the mutex at thread level was not fulfilled.
 
 If necessary, the user can interrupt the program at any time with `ctrl + c`.
